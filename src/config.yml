@@ -1,0 +1,12 @@
+general:
+  num_args_err: "&f[&aJP1&f] &cERROR IN /<cmd>: Wrong number of arguments: <argslen> instead of <reqlen>!"
+  no_permission: "&cYou don't have permission to use this command!"
+  no_console: "&cYou can't run this in the console!"
+  type_err: "&f[&aJP1&f] &cERROR IN /<cmd>: '<arg>' is not a <typ>!"
+
+potion_sel_gui:
+  name: "Potion selection!"
+  rows: 3
+
+nudge_stick:
+  name: "Nudge Stick"

@@ -1,0 +1,68 @@
+name: JJDevsPracticalFunPlugin
+version: 1.0.0
+author: JJDev256
+main: me.JJDev256.PracticalFun.Main
+api-version: 1.13
+
+commands:
+  launch:
+    description: Launch a player with the specified velocity.
+    usage: USAGE >  /launch <player> <dvx> <dvy> <dvz>
+  explodekill:
+    description: Blow a player up... in style!
+    usage: USAGE >  /explodekill <player> <explosion strength>
+  flare:
+    description: Send a colorful flare up into the air to call in your friends.
+    usage: USAGE >  /flare <color>
+  killallphantoms:
+    description: DESTROY THOSE STUPID PHANNTOMS!!!!!
+    usage: USAGE >  /killallphantoms
+  selectpotion:
+    description: Weird potions at your fingertips!
+    usage: USAGE >  /selectpotion
+  getnudgestick:
+    description: Gives a stick of flying to the player that calls the command.
+    usage: USAGE >  /getnudgestick
+    
+permissions:
+  launchcommand.*:
+    description: Allows ops to launch their victims around!!! >:)
+    children: 
+      launchcommand.use: true
+  launchcommand.use:
+        default: op
+        
+  explodekillcommand.*:
+    description: BOOOOM!!
+    children: 
+      explodekillcommand.use: true
+  explodekillcommand.use:
+        default: op
+        
+  flarecommand.*:
+    description: Gives players permission to launch firework flares into the air as signals.
+    children: 
+      flarecommand.use: true
+  flarecommand.use:
+        default: true
+              
+  killallphantoms.*:
+    description: BOOOOM!! [v2.0]
+    children: 
+      killallphantoms.use: true
+  killallphantoms.use:
+        default: op   
+                   
+  selectpotion.*:
+    description: Allows ops to get weird potions to use.
+    children: 
+      selectpotion.use: true
+  selectpotion.use:
+        default: op  
+            
+  getnudgestick.*:
+    description: im too lazy .
+    children: 
+      getnudgestick.use: true
+  getnudgestick.use:
+        default: true
